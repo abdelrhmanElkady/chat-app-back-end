@@ -25,11 +25,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy(_loginOrigin, builder =>
     {
-       // builder.WithOrigins("https://abdelrhmanelkady.github.io/chat-app-front-end");  
-        builder.AllowAnyOrigin();
+        builder.WithOrigins("https://abdelrhmanelkady.github.io");  
         builder.AllowAnyHeader();
         builder.AllowAnyMethod();
-       // builder.AllowCredentials();
+        builder.AllowCredentials();
       
     });
 });
