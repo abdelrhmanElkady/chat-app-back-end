@@ -54,11 +54,7 @@ var app = builder.Build();
 
 
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-{
-string swaggerJsonBasePath = string.IsNullOrWhiteSpace(c.RoutePrefix) ? "." : "..";
-c.SwaggerEndpoint($"{swaggerJsonBasePath}/swagger/v1/swagger.json", "My API");
-});
+    app.UseSwaggerUI);
 
 
 ////for heroku
